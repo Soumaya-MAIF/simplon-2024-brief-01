@@ -1,0 +1,61 @@
+section.features, 
+section.subscription  {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+section.features > .feature-container, 
+section.subscription > .subscription-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+section.features .feature-container .feature,
+section.subscription .subscription-container .subscription  {
+  flex-basis: calc(33.333% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.buttonClass {
+  font-size:15px;
+  font-family:Arial;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#ffffff;
+  border-color:#057fd0;
+  font-weight:bold;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow: 0px 1px 0px 0px #f0f7fa;
+  text-shadow: 0px -1px 0px #5b6178;
+  background:#007bff;
+}
+
+.buttonClass:hover {
+  background: linear-gradient(#019ad2, #33bdef);
+}
+   
+/* Media Queries */
+
+/* Pour les écrans jusqu'à 900px de large */
+@media (max-width: 900px) {
+  section.features .feature-container .feature {
+      flex-basis: calc(50% - 20px); /* Ajustez le 20px si votre gap est différent */
+  }
+}
+
+/* Pour les écrans jusqu'à 600px de large */
+@media (max-width: 600px) {
+  section.features .feature-container .feature {
+      flex-basis: 100%;
+  }
+}
+
